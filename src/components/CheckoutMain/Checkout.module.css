@@ -40,29 +40,11 @@
     margin-bottom: 30vh;
 }
 
-/* @media all and (max-height: 1420px) {
-    .empty {
-        margin-bottom: 55vh;
-    }
-} */
-
 @media all and (max-height: 1150px) {
     .full {
         margin-bottom: 20vh;
     }
 }
-
-/* @media all and (max-height: 1050px) {
-    .empty {
-        margin-bottom: 60vh;
-    }
-} */
-
-/* @media all and (max-height: 990px) {
-    .full {
-        margin-bottom: 15vh;
-    }
-} */
 
 @media all and (max-width: 750px) {
     .table_container {
