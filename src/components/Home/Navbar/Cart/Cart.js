@@ -20,10 +20,6 @@ const Cart = () => {
         dispatch(getTotalCost());
     }, [cartItems, dispatch]);
 
-    // const handleDrawerOpen = () => {
-    //   dispatch(showCart(true))
-    // };
-    
     const handleDrawerClose = () => {
         dispatch(showCart(false))
     };
@@ -35,10 +31,7 @@ const Cart = () => {
             backgroundColor: 'black',
             color: 'white',
         }}
-        role='presentation'
-        // onClick={handleDrawerClose}
-        // onKeyDown={handleDrawerClose}
-        >
+        role='presentation'>
             <Box sx={{ textAlign: 'start', mb: { xs: 0.25, sm: -0.75, md: 1.75 } }}>
                 <CloseRounded onClick={handleDrawerClose} className={ cls.close_btn } sx={{ color: 'white', m: 1 }}/>
             </Box>
