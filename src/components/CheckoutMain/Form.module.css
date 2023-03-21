@@ -46,7 +46,7 @@
 }
 
 @media all and (max-width: 480px) {
-    .form {
+    .form, .afterMessage {
         width: 340px;
     }
 
@@ -54,10 +54,14 @@
         width: 150px;
         font-size: 14px;
     }
+    
+    .afterMessage {
+        text-align: center;
+    }
 }
 
 @media all and (max-width: 360px) {
-    .form {
+    .form, .afterMessage {
         width: 280px;
     }
 
