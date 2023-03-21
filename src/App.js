@@ -8,7 +8,6 @@ import Navbar from './components/Home/Navbar/Navbar';
 import Shop from './components/Shop/Shop';
 import { useAuth0 } from "@auth0/auth0-react";
 import { Auth } from './components/auth/Auth';
-// import { Booking } from './components/CheckoutMain/Booking';
 import Payment from './components/CheckoutMain/Payment';
 
 function App() {
@@ -26,7 +25,6 @@ function App() {
                     <Route path='/services/:id' element={ <ServiceList /> }></Route>
                     <Route path='/checkout' element={ <Checkout /> }></Route>
                     <Route path='/payment' element={ <Payment /> }></Route>
-                    {/* <Route path='/booking' element={ <Booking /> }></Route> */}
                 </Routes>
 
                 <Auth />
