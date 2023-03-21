@@ -26,9 +26,7 @@ const CartItem = (props) => {
         <div className={ cls.cartItems }>
             <img src={ `./images/${image}.jpg` } alt='Spa order' />
             <div className={ cls.info }>
-                <p 
-                // className={ cls.title }
-                >{ title }</p> 
+                <p>{ title }</p> 
                 <div className={ cls.btns }>
                     <div onClick={() => dispatch(decreaseQuantity(id))}>
                         <button className={ cls.btn }>&#8722;</button>
