@@ -6,9 +6,6 @@ const ServiceList = ({ params }) => {
     const { id } = useParams();
     let data = dataServiceList[id];
 
-    console.log(data)
-
-
     return (
         <section className={ cls.big_container }>
             <div className={ cls.imageList }>
