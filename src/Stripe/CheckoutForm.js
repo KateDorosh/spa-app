@@ -6,14 +6,12 @@ import { useAuth0 } from "@auth0/auth0-react";
 import cls from './Stripe.module.css';
 import axios from '../components/CheckoutMain/axios';
 import { ContactForm } from "../components/CheckoutMain/Form";
-// import { Link } from "react-router-dom";
 import Swal from 'sweetalert2';
 import 'animate.css';
 
 export const CheckoutForm = () => {
   const stripe = useStripe();
   const elements = useElements();
-//   const dispatch = useDispatch();
   const cost = useSelector(getCost);
   const { isAuthenticated } = useAuth0();
   const [submitted, setSubmitted] = useState(false);
@@ -47,7 +45,6 @@ export const CheckoutForm = () => {
                 background: '#b9b4b0',
                 confirmButtonColor: 'black',
                 confirmButtonText:
-                // Link з React-router-dom ту не спрацьовує, MUI теж
                     `<a href="http://localhost:3000" style="text-decoration: none; color: white;">Go back</a>`,
                 showClass: {
                     popup: 'animate__animated animate__fadeInDown'
@@ -76,13 +73,9 @@ export const CheckoutForm = () => {
             <CardElement className={ cls.cardElement }/>
             <p>Enter 4242 4242 4242 4242 to test Stripe payment system</p>
             
-            {/* <Link to='/' onClick={ () => dispatch(clearAll()) }> */}
-                <button disabled={ submitted === false } className={ submitted === true ? cls.pay_btn : cls.pay_disabled }>
-                    PAY {`$${ !isAuthenticated ? cost : cost*0.9 }`}
-                </button>
-            {/* </Link> */}
-        {/* <button>PAY {`$${ !isAuthenticated ? cost : cost*0.9 }`} AND BOOK AN APPOINTMENT</button> */}
-        
+            <button disabled={ submitted === false } className={ submitted === true ? cls.pay_btn : cls.pay_disabled }>
+                PAY {`$${ !isAuthenticated ? cost : cost*0.9 }`}
+            </button>        
         </form>
     </>
   );
