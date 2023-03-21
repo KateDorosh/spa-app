@@ -20,9 +20,7 @@ const Checkout = () => {
 
     const CustomBox = styled(Box)(() => ({
         color: 'white',
-        backgroundColor: 'black',
-        // width: '80%',
-        // marginLeft: '10%'
+        backgroundColor: 'black'
       }));
 
     return (<div className={ cls.table_container }>
@@ -70,9 +68,6 @@ const Checkout = () => {
                         BOOK AN APPOINTMENT
                     </button>
                 </Link>
-                // {/* <Link to='/booking'>
-                // <button className={ cls.checkoutBtn }>BOOK AN APPOINTMENT</button>
-                // </Link> */}
             )}
         </Box>   
     </div>);
