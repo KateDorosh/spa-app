@@ -13,7 +13,6 @@
     text-decoration: none;
 }
 
-/* ефект рамки */
 .small, .big {
     position: relative;
     z-index: 1;
@@ -51,7 +50,6 @@
     height: 100%;
     opacity: 0.5;
 }
-/* _________________________________________ */
 
 .small img, .big img {
     margin-bottom: 15px;
