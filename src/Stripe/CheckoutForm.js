@@ -45,7 +45,7 @@ export const CheckoutForm = () => {
                 background: '#b9b4b0',
                 confirmButtonColor: 'black',
                 confirmButtonText:
-                    `<a href="http://localhost:3000" style="text-decoration: none; color: white;">Go back</a>`,
+                    `<a href="https://thea-spa-jtopolska.vercel.app" style="text-decoration: none; color: white;">Go back</a>`,
                 showClass: {
                     popup: 'animate__animated animate__fadeInDown'
                 },
