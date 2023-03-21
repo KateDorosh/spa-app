@@ -34,7 +34,6 @@ const Slider = () => {
     }, []);
 
     return (
-
         <div className={ cls.slider } ref={ app }>
             {dataSlides.map((slide, i) => (
                 <div className={ cls.slides } key={ i }>
@@ -44,18 +43,6 @@ const Slider = () => {
                 </div>
             ))}
         </div>
-
-
-
-        // <div className={ cls.slider } ref={ app }>
-        //     {dataSlides.map((slide, i) => (
-        //         <div className={ cls.slides } key={ i }>
-        //             <img className={`${slide.img}`} src={ `./images/${ slide.img }.jpg` } alt='Spa' />
-        //             <p className={`${slide.img}p`}>{ slide.titleTop.toLocaleUpperCase() }</p>
-        //             <p className={`${slide.img}pp`}>{ slide.titleBottom.toLocaleUpperCase() }</p>
-        //         </div>
-        //     ))}
-        // </div>
     );
 }
 export default Slider;
